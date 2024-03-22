@@ -20,8 +20,9 @@
 2. Image shape - 3 x 32 x 32 (colour image - RGB)
 3. Number of classes 10 - plane, car, bird, cat, deer, dog, frog, horse, ship, truck
 
-Example images from training set
-![image](https://github.com/sayanbanerjee32/TSAI_ERAv2_S8/assets/11560595/926bb4d9-81e6-4bde-b89f-d4545624ffda)
+Example images from training set  
+![image](https://github.com/sayanbanerjee32/TSAI_ERAv2_S8/assets/11560595/711aed42-d235-45f3-b7e1-729fbb8a01fe)
+
 
 
 ## Model with Batch Normalization
