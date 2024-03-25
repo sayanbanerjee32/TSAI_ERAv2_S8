@@ -4,7 +4,7 @@ import torch.nn.functional as F
 
 class NetS6(nn.Module):
     def __init__(self,n = 8):
-        super(Net, self).__init__()
+        super(NetS6, self).__init__()
         # Convolusion Block - Inital
         #input size: 28 x 28 x 1, output size: 28 x 28 x n, receptive field: 3
         self.convi = nn.Conv2d(1, n, 3, padding=1, bias = False)
@@ -89,7 +89,7 @@ class NetS6(nn.Module):
 
 class NetS7(nn.Module):
     def __init__(self, n = 8, dropout_value = 0.1):
-        super(Net, self).__init__()
+        super(NetS7, self).__init__()
         # # Input Block
         self.convblock1 = nn.Sequential(
             nn.Conv2d(in_channels=1, out_channels=n,
@@ -178,7 +178,7 @@ class NetS7(nn.Module):
 
 class NetS8BN(nn.Module):
     def __init__(self, n = 8, dropout_value = 0.1):
-        super(Net, self).__init__()
+        super(NetS8BN, self).__init__()
         # # Input Block
         self.C1 = nn.Sequential(
             nn.Conv2d(in_channels=3, out_channels=n*2,
@@ -307,7 +307,7 @@ class NetS8BN(nn.Module):
 
 class NetS8GN(nn.Module):
     def __init__(self, n = 8, dropout_value = 0.05):
-        super(Net, self).__init__()
+        super(NetS8GN, self).__init__()
         # # Input Block
         self.C1 = nn.Sequential(
             nn.Conv2d(in_channels=3, out_channels=n*2,
@@ -436,7 +436,7 @@ class NetS8GN(nn.Module):
 
 class NetS8LN(nn.Module):
     def __init__(self, n = 8, dropout_value = 0.05):
-        super(Net, self).__init__()
+        super(NetS8LN, self).__init__()
         # # Input Block
         self.C1 = nn.Sequential(
             nn.Conv2d(in_channels=3, out_channels=n*2,
