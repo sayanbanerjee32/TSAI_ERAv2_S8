@@ -1,4 +1,4 @@
-# TSAI_ERAv2_S8
+# Vision - Normalization techniques
 
 ## Objective
 1. use dataset to CIFAR10
